@@ -1,258 +1,222 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Steve Portfolio</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>John Markowitz</title>
+<!-- add fancybox.css -->
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/all.css" />
+	<link rel="stylesheet" href="css/screen.css" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
-
 <body>
-
-	<!--================Header Menu Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-							<li class="nav-item submenu dropdown active">
-								<a class="nav-link" href="#">Portfolio</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item "><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portrfolio Details</a>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+	<div id="wrapper" class="portfolio">
+		<div class="wrapper-holder">
+			<header id="header">
+				<a class="menu_trigger" href="#">menu</a>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="myskills.html">My skills</a></li>
+							<li><a class="active" href="Portfolio.html">Portfolio</a></li>
+							<li><a href="Contact.html">Contact</a></li>
 						</ul>
-					</div>
-				</div>
-			</nav>
+					</nav>
+			</header>
 		</div>
-	</header>
-	<!--================Header Menu Area =================-->
-
-	<!--================ Start portfolio Banner Area =================-->
-	<section class="banner_area">
-		<div class="banner_inner d-flex align-items-center">
-			<div class="container">
-				<div class="banner_content text-right">
-					<h1>My Portfolio</h1>
-					<div class="page_link">
-						<a href="index.html">Home</a>
-						<a href="portfolio.html">Portfolio</a>
-					</div>
-				</div>
-			</div>
+		<div class="wrapper-holder grey">
+			<section id="main">
+				<h2>All works that I made</h2>
+				<ul id="filters" class="sub_nav">
+					<li class="active" data-filter="*">All works</li>
+					<li data-filter=".web">Web design</li>
+					<li data-filter=".illustration">Illustration</li>
+					<li data-filter=".dtp">DTP</li>
+					<li data-filter=".key">Key Visual</li>
+					<li data-filter=".identity">Identity</li>
+				</ul>
+				<ul id="container" class="item-list">
+					<li class="item web key" >
+						<div class="image ">
+							<img src="images/pic_01.png"  alt="" />
+							<div class="hover">
+								<a class="fancybox" rel="gallery1" href="#portfolio_1">
+									<div class="item-content">
+										<h4>voluptas assumenda</h4>
+										<p>Sepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="item illustration identity">
+						<div class="image">
+							<img src="images/pic_1_1.png"  alt="" />
+							<div class="hover">
+								<a class="fancybox" rel="gallery1" href="#portfolio_2">
+									<div class="item-content">
+										<h4>voluptas assumenda</h4>
+										<p>Sepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>
+									</div>
+									</a>
+							</div>
+						</div>
+					</li>
+					<li class="item web dtp">
+						<div class="image">
+							<img src="images/pic_02.png"  alt="" />
+							<div class="hover">
+								<a class="fancybox" rel="gallery1" href="#portfolio_3">
+									<div class="item-content">
+										<h4>voluptas assumenda</h4>
+										<p>Sepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="item illustration key">
+						<div class="image">
+							<img src="images/pic_03.png"  alt="" />
+							<div class="hover">
+								<a class="fancybox" rel="gallery1" href="#portfolio_4">
+									<div class="item-content">
+										<h4>voluptas assumenda</h4>
+										<p>Sepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="item web identity">
+						<div class="image">
+							<img src="images/pic_04.png"  alt="" />
+							<div class="hover">
+								<a class="fancybox" rel="gallery1" href="#portfolio_5">
+									<div class="item-content">
+										<h4>voluptas assumenda</h4>
+										<p>Sepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="item dtp identity">
+						<div class="image">
+							<img src="images/pic_05.png"  alt="" />
+							<div class="hover">
+								<a class="fancybox" rel="gallery1" href="#portfolio_6">
+									<div class="item-content">
+										<h4>voluptas assumenda</h4>
+										<p>Sepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="item dtp key">
+						<div class="image">
+							<img src="images/pic_06.png"  alt="" />
+							<div class="hover">
+								<a class="fancybox" rel="gallery1" href="#portfolio_7">
+									<div class="item-content">
+										<h4>voluptas assumenda</h4>
+										<p>Sepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="item web identity">
+						<div class="image">
+							<img src="images/pic_07.png"  alt="" />
+							<div class="hover">
+								<a class="fancybox" rel="gallery1" href="#portfolio_8">
+									<div class="item-content">
+										<h4>voluptas assumenda</h4>
+										<p>Sepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
 		</div>
-	</section>
-	<!--================ End Portfolio Banner Area =================-->
-
-	<!--================ Start Portfolio Area =================-->
-	<section class="section_gap portfolio_area" id="work">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6 text-center">
-					<div class="main-title">
-						<h1>Latest Works</h1>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may
-							see some for as low as $.17 each.</p>
-					</div>
-				</div>
+		<footer id="footer">
+			<div class="footer-content">
+				<ul class="social">
+					<li class="email"><a href="#">Email</a></li>
+					<li class="facebook"><a href="#">Facebook</a></li>
+					<li class="google"><a href="#">Google+</a></li>
+					<li class="twitter"><a href="#">Twitter</a></li>
+					<li class="pinterest"><a href="#">Pinterest</a></li>
+				</ul>
+				<p class="copy">Copyright 2014 John Markowitz. All rights reserved.</p>
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-10">
-					<div class="projects_fillter">
-						<ul class="filter list">
-							<li class="active" data-filter="*">All Categories</li>
-							<li data-filter=".brand">Branding</li>
-							<li data-filter=".work">Creative Work </li>
-							<li data-filter=".web">Web Design</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="projects_inner row grid">
-				<div class="grid-sizer col-sm-6 col-md-3 col-lg-3"></div>
-				<div class="col-lg-6 col-sm-6 col-sm-12 brand web grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work1.jpg" alt="">
-						<div class="projects_text">
-							<a href="portfolio-details.html">
-								<h4>2D Vinyl Design</h4>
-							</a>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-sm-12 brand work grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work2.jpg" alt="">
-						<div class="projects_text">
-							<a href="portfolio-details.html">
-								<h4>2D Vinyl Design</h4>
-							</a>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 work grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work3.jpg" alt="">
-						<div class="projects_text">
-							<a href="portfolio-details.html">
-								<h4>2D Vinyl Design</h4>
-							</a>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-sm-6 brand work grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work5.jpg" alt="">
-						<div class="projects_text">
-							<a href="portfolio-details.html">
-								<h4>2D Vinyl Design</h4>
-							</a>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-sm-6 brand web grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work4.jpg" alt="">
-						<div class="projects_text">
-							<a href="portfolio-details.html">
-								<h4>2D Vinyl Design</h4>
-							</a>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-sm-6 brand work web grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work8.jpg" alt="">
-						<div class="projects_text">
-							<a href="portfolio-details.html">
-								<h4>2D Vinyl Design</h4>
-							</a>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 brand work web grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work6.jpg" alt="">
-						<div class="projects_text">
-							<a href="portfolio-details.html">
-								<h4>2D Vinyl Design</h4>
-							</a>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 brand work web grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work7.jpg" alt="">
-						<div class="projects_text">
-							<a href="portfolio-details.html">
-								<h4>2D Vinyl Design</h4>
-							</a>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-			</div>
+		</footer>	
+	</div>
+	<div style="display:none;">
+		<div id="portfolio_1" class="popup_portfolio">
+			<img src="images/img_pf02.jpg"  alt="" />
+			<h3>Title of the work</h3>
+			<time datetime="2014-06-20">Made: 06/20/14</time>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 		</div>
-	</section>
-	<!--================ End Portfolio Area =================-->
-
-	<!--================Footer Area =================-->
-	<footer class="footer_area section_gap">
-		<div class="container">
-			<div class="row footer_inner justify-content-center">
-				<div class="col-lg-6 text-center">
-					<aside class="f_widget social_widget">
-						<div class="f_logo">
-							<img src="img/logo.png" alt="">
-						</div>
-						<div class="f_title">
-							<h4>Follow Me</h4>
-						</div>
-						<ul class="list">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li><a href="#"><i class="fa fa-behance"></i></a></li>
-						</ul>
-					</aside>
-					<div class="copyright">
-						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-					</div>
-				</div>
-			</div>
+		<div id="portfolio_2" class="popup_portfolio">
+			<img src="images/img_pf02.jpg"  alt="" />
+			<h3>Title of the work</h3>
+			<time datetime="2014-06-20">Made: 06/20/14</time>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
+		<div id="portfolio_3" class="popup_portfolio">
+			<img src="images/img_pf02.jpg"  alt="" />
+			<h3>Title of the work 3</h3>
+			<time datetime="2014-06-20">Made: 06/20/14</time>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+		<div id="portfolio_4" class="popup_portfolio">
+			<img src="images/img_pf02.jpg"  alt="" />
+			<h3>Title of the work 4</h3>
+			<time datetime="2014-06-20">Made: 06/20/14</time>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+		<div id="portfolio_5" class="popup_portfolio">
+			<img src="images/img_pf02.jpg"  alt="" />
+			<h3>Title of the work 5</h3>
+			<time datetime="2014-06-20">Made: 06/20/14</time>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+		<div id="portfolio_6" class="popup_portfolio">
+			<img src="images/img_pf02.jpg"  alt="" />
+			<h3>Title of the work 6</h3>
+			<time datetime="2014-06-20">Made: 06/20/14</time>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+		<div id="portfolio_7" class="popup_portfolio">
+			<img src="images/img_pf02.jpg"  alt="" />
+			<h3>Title of the work 7</h3>
+			<time datetime="2014-06-20">Made: 06/20/14</time>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+		<div id="portfolio_8" class="popup_portfolio">
+			<img src="images/img_pf02.jpg"  alt="" />
+			<h3>Title of the work 8</h3>
+			<time datetime="2014-06-20">Made: 06/20/14</time>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/cells-by-row.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
-
 </html>
