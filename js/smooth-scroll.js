@@ -26,9 +26,14 @@
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault()
-          
+
+          var scrollTo = target.offset().top;
+          if(($(target)[0].id).includes("carousel")) {
+            scrollTo = scrollTo + (-75)
+          }
+
           $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: scrollTo
           },
           duration, function() {
             // Callback after animation
